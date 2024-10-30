@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class HitEntity : MonoBehaviour
+public class AttackEnemy : MonoBehaviour
 {
 
     [SerializeField] int damage = 10;
@@ -16,3 +14,5 @@ public class HitEntity : MonoBehaviour
         }
     }
 }
+
+
