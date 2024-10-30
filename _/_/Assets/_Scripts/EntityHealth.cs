@@ -6,12 +6,18 @@ public class EntityHealth : MonoBehaviour
 {
 
     [SerializeField] int _maxHealth;
+    [SerializeField] ParticleSystem impactPlayer;
 
     public int CurrentHealth { get; private set; }
 
     private void Awake()
     {
         CurrentHealth = _maxHealth;
+    }
+
+    private void Start()
+    {
+        impactPlayer.Stop();
     }
 
     public int MaxHealth
@@ -35,7 +41,7 @@ public class EntityHealth : MonoBehaviour
     {
         Debug.Log("Degats");
         CurrentHealth = CurrentHealth - damage;
-        //impactPlayer.Play();
+        impactPlayer.Play();
     }
 
 
