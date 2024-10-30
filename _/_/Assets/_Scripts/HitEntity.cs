@@ -9,10 +9,6 @@ public class HitEntity : MonoBehaviour
 
     void OnTriggerEnter(Collider player)
     {
-        if (player.tag == "Player")
-        {
-            player.SendMessage("TakeDamage", damage);
-            Debug.Log("Le joueur prend un degats");
-        }
+        
     }
 }

@@ -558,7 +558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 261620509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f72b57696a4fd44686ee9ab3191a519, type: 3}
+  m_Script: {fileID: 11500000, guid: fe166836418ad0b4c88385732cdf6bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
@@ -1374,7 +1374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 1044316936}
   _text: {fileID: 0}
-  _playerHealth: {fileID: 1349007869}
+  _playerHealth: {fileID: 0}
 --- !u!1 &728913436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,7 +1963,6 @@ GameObject:
   - component: {fileID: 1349007868}
   - component: {fileID: 1349007867}
   - component: {fileID: 1349007871}
-  - component: {fileID: 1349007869}
   - component: {fileID: 1349007870}
   m_Layer: 0
   m_Name: Player
@@ -2063,19 +2062,6 @@ MonoBehaviour:
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1349007869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349007864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d31386448ed24ef4a834e9e8d54ae1ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 100
 --- !u!114 &1349007870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2758,6 +2744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1850274032}
   - component: {fileID: 1850274033}
+  - component: {fileID: 1850274034}
   m_Layer: 0
   m_Name: Physics
   m_TagString: Untagged
@@ -2805,6 +2792,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1850274034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850274031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31386448ed24ef4a834e9e8d54ae1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
 --- !u!1001 &1915564914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c123e8d774fa10468af5ff94596d98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: {fileID: 1349007869}
+  _health: {fileID: 1850274034}
   _slider: {fileID: 1044316936}
   _numberHealth: {fileID: 405430522}
 --- !u!1660057539 &9223372036854775807

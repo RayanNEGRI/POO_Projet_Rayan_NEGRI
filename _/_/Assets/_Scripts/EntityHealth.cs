@@ -31,43 +31,10 @@ public class EntityHealth : MonoBehaviour
 
     public int GetMaxHealth() { return _maxHealth; }
 
-    //private void OnValidate()
-    //{
-    //    if (_maxHealth <= 0)
-    //    {
-    //        _maxHealth = 100;
-    //        Debug.Log("Erreur la vie max du joueur est inférieur ou égal à 0 , alors je vais la remettre à 100 automatiquement");
-    //    }
-
-    //    if (CurrentHealth <= 0)
-    //    {
-    //        CurrentHealth = 1;
-    //        Debug.Log("Erreur la vie du joueur est inférieur ou égal à 0 , alors je vais la remettre à 1 automatiquement");
-    //    }
-    //}
-
-    //private void Reset()
-    //{
-    //    Debug.Log("Objet Initialisé");
-    //    _maxHealth = 100;
-    //}
-
     void TakeDamage(int damage)
     {
-        //if (damage <= 0)
-        //{
-        //    Debug.LogError("damage must be positive");
-        //    return;
-        //}
-
-        ////death
-        //if (CurrentHealth <= 0)
-        //{
-        //    //Die();
-        //}
-
-        CurrentHealth = CurrentHealth - damage;
         Debug.Log("Degats");
+        CurrentHealth = CurrentHealth - damage;
         //impactPlayer.Play();
     }
 

@@ -12,7 +12,7 @@ public class ShowHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _slider.value = _health.MaxHealth;
+        _slider.value = _health.CurrentHealth;
         _numberHealth.text = _slider.value.ToString();
     }
 }
