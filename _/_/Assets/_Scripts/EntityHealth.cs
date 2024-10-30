@@ -14,6 +14,23 @@ public class EntityHealth : MonoBehaviour
         CurrentHealth = _maxHealth;
     }
 
+    public int MaxHealth
+    {
+        get { return _maxHealth; }
+        set
+        {
+            if (value <= 0)
+            {
+                Debug.Log("Erreur");
+                return;
+            }
+
+            _maxHealth = value;
+        }
+    }
+
+    public int GetMaxHealth() { return _maxHealth; }
+
 
 
 }
