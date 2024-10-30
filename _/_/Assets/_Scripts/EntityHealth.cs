@@ -44,5 +44,10 @@ public class EntityHealth : MonoBehaviour
         impactPlayer.Play();
     }
 
+    public void AddVie(int heal)
+    {
+        CurrentHealth = CurrentHealth + heal;
+    }
+
 
 }
