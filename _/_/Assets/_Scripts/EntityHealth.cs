@@ -47,7 +47,6 @@ public class EntityHealth : MonoBehaviour
 
     void TakeDamage(int damage)
     {
-        Debug.Log("Degats");
         CurrentHealth = CurrentHealth - damage;
         impactPlayer.Play();
     }
