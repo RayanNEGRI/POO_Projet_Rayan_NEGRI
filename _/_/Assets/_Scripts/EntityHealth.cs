@@ -35,6 +35,14 @@ public class EntityHealth : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public int GetMaxHealth() { return _maxHealth; }
 
     void TakeDamage(int damage)
@@ -44,7 +52,7 @@ public class EntityHealth : MonoBehaviour
         impactPlayer.Play();
     }
 
-    public void AddVie(int heal)
+    public void AddLife(int heal)
     {
         CurrentHealth = CurrentHealth + heal;
     }

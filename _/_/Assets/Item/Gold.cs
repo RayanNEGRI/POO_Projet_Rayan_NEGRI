@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Gold : Item
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public EntityGold entityGold;
 
-    // Update is called once per frame
-    void Update()
+    public override void Use(PickUpItem pui)
     {
-        
+        base.Use(pui);
+        Debug.Log("Le Joueur reçoit de la vie");
+        entityGold.AddGold(20);
     }
 }

@@ -11,7 +11,7 @@ public class HealthPotion : Item
     {
         base.Use(pui);
         Debug.Log("Le Joueur reçoit de la vie");
-        entityHealth.AddVie(20);
+        entityHealth.AddLife(20);
     }
 
 }

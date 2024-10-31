@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class EntityGold : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int CurrentGold { get; private set; }
 
-    // Update is called once per frame
-    void Update()
+    public void AddGold(int money)
     {
-        
+        CurrentGold = CurrentGold + money;
     }
 }

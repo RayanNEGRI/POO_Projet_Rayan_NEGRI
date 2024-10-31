@@ -17,7 +17,7 @@ public abstract class Health
         set { _currentLife = value; }
     }
 
-    internal string MaxHealth => _maxHealth;
+    internal int MaxHealth => _maxHealth;
 
     public abstract int AddHeal();
 
