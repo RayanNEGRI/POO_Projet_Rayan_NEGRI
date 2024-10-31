@@ -7,6 +7,8 @@ public class EntityHealth : MonoBehaviour
 
     [SerializeField] int _maxHealth;
     [SerializeField] ParticleSystem impactPlayer;
+    [SerializeField] Animator _anim;
+
 
     public int CurrentHealth { get; private set; }
 
@@ -49,6 +51,16 @@ public class EntityHealth : MonoBehaviour
     {
         CurrentHealth = CurrentHealth - damage;
         impactPlayer.Play();
+
+        if (_anim)
+        {
+            _anim.SetTrigger("GetHit");
+        }
+        else
+        {
+            Debug.Log("Pas d'anim dispo pour le composant quand il prend un dégats");
+        }
+            
     }
 
     public void AddLife(int heal)

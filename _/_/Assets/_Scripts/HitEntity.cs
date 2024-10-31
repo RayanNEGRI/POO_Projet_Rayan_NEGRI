@@ -8,6 +8,7 @@ public class HitEntity : MonoBehaviour
     [SerializeField] InputActionReference _attack; 
     [SerializeField] int _damage = 10; // Dégâts infligés par l'attaque
     [SerializeField] bool _attackState;
+    [SerializeField] Animator _anim;
     Collider _target;
 
 
@@ -33,6 +34,7 @@ public class HitEntity : MonoBehaviour
 
         if (_attackState && _target)
         {
+            _anim.SetTrigger("Attack");
             _target.SendMessage("TakeDamage", _damage);
         }
         else

@@ -243,6 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 20
   impactPlayer: {fileID: 1903086879}
+  _anim: {fileID: 0}
 --- !u!1 &58043774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1695,7 @@ MonoBehaviour:
   _attack: {fileID: 1192807847097754095, guid: 7465c15ff2f50e14295da1356a60d5be, type: 3}
   _damage: 10
   _attackState: 0
+  _anim: {fileID: 1794143068}
 --- !u!1 &1024401181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3031,6 +3033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   impactPlayer: {fileID: 1952222654}
+  _anim: {fileID: 1794143068}
 --- !u!114 &1850274035
 MonoBehaviour:
   m_ObjectHideFlags: 0
